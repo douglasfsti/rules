@@ -1,0 +1,10 @@
+/cmd                    # Entrypoints (main.go)
+/internal               # Lógica core da aplicação (não exposta externamente)
+  /core
+    /domain             # Entidades e regras de negócio (Puro)
+    /ports              # Interfaces (Input/Output)
+  /adapters             # Implementações (Handler HTTP, Repository SQL, Clientes Externos)
+/pkg                    # Utilitários e pacotes compartilhados
+/api                    # Definições de transporte gRPC/REST e handlers
+/configs                # Schemas e carregamento de configuração
+/test                   # Utilitários de teste, mocks e testes de integração
